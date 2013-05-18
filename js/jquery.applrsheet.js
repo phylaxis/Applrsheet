@@ -10,21 +10,22 @@
     var settings = $.extend({}, $.fn.applrsheet.defaults, options);
 
     var viewport = {
-        width : $(window).width(),
-        height : $(window).height()
+        width : $(window).innerWidth(),
+        height : $(window).innerHeight()
     };
     var width = viewport.width;
     var height = viewport.height;
 
     var sheetstyle = {
-      "position":"absolute",
-      "top":0,
+      "position":"fixed",
+      "bottom":0,
       "left": 0,
       "display":"none",
-      "height":"100%",
-      "width":"100%",
+      "height": "100%",
+      "width": width,
       "padding":0,
-      "margin":0
+      "margin":0,
+      "overflow":"scroll"
     };
 
     var substyle = {
@@ -34,8 +35,9 @@
       "display":"none",
       "padding":0,
       "margin":0,
-      "width":"100%",
-      "height":"auto"
+      "width":width,
+      "height":"100%",
+      "overflow":"scroll"
     };
 
     var sheetID = sheetAttrs.id;
