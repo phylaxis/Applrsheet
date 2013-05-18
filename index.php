@@ -4,11 +4,11 @@
 
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script type="text/javascript" src="/js/jquery.applrsheet.js"></script>
+	<script type="text/javascript" src="js/jquery.applrsheet.js"></script>
 
-	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="	css/bootstrap.min.css">
 
 	<style type="text/css">
 		body {
@@ -23,6 +23,10 @@
 <body>
 <div id="container">
 	<h1>Some Stuff</h1>
+	<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+	<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+	<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+	<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
 	<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
 	<p id="clicker" class="btn btn-info">Click here</p>
 	<p id="clicker2"class="btn btn-info">Click there</p>
