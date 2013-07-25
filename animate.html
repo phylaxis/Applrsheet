@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>Test</title>
+
+	<!-- Set up iOS meta -->
+	<meta name="viewport" content="width=device-width">
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<style type="text/css">
+		#outer {
+			position: relative;
+			top: 0;
+			bottom:	0;
+			width: 100%;
+			height: 100%;
+			border: 1px solid red;
+			overflow-x: hidden;
+		}
+
+		#inner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #ccc;
+			border: 1px solid green;
+			display: none;
+		}
+
+		#mainview {
+			float: left;
+			height: 100%;
+		}
+
+		#subview {
+			float: left;
+			border: 1px solid purple;
+			height: 100%;
+		}
+	</style>
+
+	<script type="text/javascript">
+		// global vars
+		var winWidth = $(window).width();
+		var winHeight = $(window).height();
+
+		$(document).ready(function(){
+			var outWidth = $("#outer").width();
+
+			$("#inner").width(outWidth*2);
+			$("#mainview").width(outWidth);
+			$("#subview").width(outWidth-2);
+
+			$(".btn").click(function(){
+				$("#inner").show("slide", { direction: "down" }, 1000);
+			});
+
+			$(".close-btn").click(function(){
+				$("#inner").hide("slide", { direction: "down" }, 1000);
+			});
+
+			var subpanelWidth = $("#subview").width() / 2;
+			$(".sub-btn").click(function(){
+				$("#inner").animate({"left": -outWidth}, "fast");
+			});
+
+			$(".close-sub-btn").click(function(){
+				$("#inner").animate({"left": 0}, "slow");
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<div id="outer">
+		<div class="btn btn-inverse">Open Sheet</div>
+		<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+		<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+		<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+		<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+		<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+		<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+		<div class="btn btn-inverse">Open Sheet</div>
+
+		<div id="inner">
+			<div id="mainview">
+				<h2>Main View</h2>
+				<div class="sub-btn btn">Open Subpanel</div> <div class="close-btn btn btn-danger">Close Sheet</div>
+				<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+				<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+				<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+				<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+			</div>
+			<div id="subview">
+				<h2>Sub View</h2>
+				<div class="close-sub-btn btn">Close Subpanel</div>
+				<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+				<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+
+				<p>Lorem ipsum dolor sit amet, capio et imputo ratis at quod ut, quibus iaceo bene, wisi. Luptatum demoveo, abigo quod ut duis consequat multo. Nostrud iriure defui vicis duis ex abluo feugait, proprius, vulputate letatio. Commodo, quidne, illum commodo bene consectetuer diam proprius opes tum.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

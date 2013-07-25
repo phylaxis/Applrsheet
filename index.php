@@ -12,6 +12,9 @@
 
 	<style type="text/css">
 		body {
+		}
+		#container
+		{
 			margin: 20px;
 		}
 	</style>
@@ -65,6 +68,11 @@ $('#clicker2').applrsheet({
 	"sheetCSS":{
 		"color":"red",
 		"background-color":"green"
+	},
+	"subAttrs":{
+		"ajax":{
+			"url":"subsheet2.html"
+		}
 	}
 });
 </script>
